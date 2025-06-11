@@ -60,16 +60,16 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // Retrofit y Gson
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
     // Corrutinas
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
+    implementation (libs.kotlinx.coroutines.android)
 
     // RecyclerView
-    implementation ("androidx.recyclerview:recyclerview:1.3.2")
+    implementation (libs.androidx.recyclerview)
     // Glide para imágenes
-    implementation ("com.github.bumptech.glide:glide:4.16.0")
-    kapt("com.github.bumptech.glide:compiler:4.16.0")
+    implementation (libs.glide)
+    kapt(libs.compiler)
 
-    implementation("io.coil-kt:coil-compose:2.6.0") // para cargar imágenes
+    implementation(libs.coil.compose) // para cargar imágenes
 }

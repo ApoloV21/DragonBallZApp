@@ -30,7 +30,7 @@ class CharacterAdapter(private val list: List<Character>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val character = list[position]
         holder.name.text = character.name
-        holder.race.text = "Raza: ${character.race}"
+        "Raza: ${character.race}".also { holder.race.text = it }
         Glide.with(holder.image.context).load(character.image).into(holder.image)
     }
 }
