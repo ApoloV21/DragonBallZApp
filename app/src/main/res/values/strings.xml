@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DragonBallZApp</string>
+    <string name="welcome">¡Bienvenido a DragonBallZApp!</string>
+    <string name="see_characters">Ver personajes</string>
+</resources>
